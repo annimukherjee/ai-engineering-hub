@@ -11,10 +11,24 @@ Click below to watch the demo video of the AI Assistant in action:
 ## Installation and setup
 
 **Setup Ollama**:
+
+   *On Linux*:
+
    ```bash
-   # setup ollama on linux 
    curl -fsSL https://ollama.com/install.sh | sh
    # pull llama 3.2 vision model
+   ollama run llama3.2-vision 
+   ```
+
+   *On MacOS*:
+
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"   # install homebrew
+   xcode-select --install
+
+   brew install ollama      # use brew to install ollama
+
+   ollama pull llama3.2-vision      # pull llama 3.2 vision model
    ollama run llama3.2-vision 
    ```
 
